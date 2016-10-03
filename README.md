@@ -8,3 +8,4 @@
 **Project Description**: Acro Media wants to build a migration from Shopify to Drupal Commerce 2.x. We are hoping to cover at least Orders, Customers and Products, with additional data if time permits. The project will pull the appropriate data from Shopify and run it through Drupal's Migrate interface to map it to the appropriate schema in Drupal Commerce. You will be building a commerce_migrate_shopify that will handle the data transformations and have automated testing to insure integrity.
 
 Project by: Ameen, Lam, Stephane
+asdasdasdasd
