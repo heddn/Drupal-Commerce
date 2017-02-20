@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies: {}
+id: migrate_shopify_products
+label: 'Shopify Products'
+description: 'Import Shopify products into Drupal Commerce'
+source_type: 'CSV Files'
+module: migrate_shopify
+shared configuration:
+	source:
+		path: ./modules/custom/migrate_shopify/data/products_export.csv
+		header_row_count: 1

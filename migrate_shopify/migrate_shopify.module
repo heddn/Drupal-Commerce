@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Contains migrate_shopify.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function migrate_shopify_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the migrate_shopify module.
+    case 'help.page.migrate_shopify':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Migrate Shopify Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function migrate_shopify_theme() {
+  return [
+    'migrate_shopify' => [
+      'template' => 'migrate_shopify',
+      'render element' => 'children',
+    ],
+  ];
+}

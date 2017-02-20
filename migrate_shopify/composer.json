@@ -1,0 +1,14 @@
+{
+  "name": "drupal/migrate_shopify",
+  "type": "drupal-module",
+  "description": "Migrate Shopify Module",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/migrate_shopify",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/migrate_shopify",
+    "source": "http://cgit.drupalcode.org/migrate_shopify"
+  },
+  "require": { }
+}

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies: {  }
+id: migrate_shopify_import_product
+label: 'Commerce Migrate Shopify Product Import'
+migration_group: migrate_shopify_products
+source:
+	plugin: migrate_shopify_product_csv
+  keys:
+    - Handle
+process:
+  title: Handle
+  type:
+    plugin: default_value
+    default_value: product
+  stores:
+    plugin: default_value
+    default_value:
+      - 1
+destination:
+	plugin: entity:commerce_product
+migration_dependencies: {}
