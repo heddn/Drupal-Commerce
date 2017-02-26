@@ -1,0 +1,1 @@
+Not only does this shorten your code by two lines, but it also let’s you work with an Object instead of a Resource now. Almost all of the procedural functions available for file handling are also available as methods of SplFileObject.
