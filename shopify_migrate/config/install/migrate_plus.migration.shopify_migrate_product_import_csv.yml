@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies: {  }
+id: shopify_migrate_product_import_csv
+migration_tags:
+  - shopify_migrate
+migration_group: shopify_migrate_csv
+label: 'Shopify Migrate Product import'
+source:
+  plugin: 'Product.php id'
+  keys:
+    - 
+process:
+  title: Title
+  body: Body (HTML)
+  vendor: 
+  type:
+    plugin: default_value
+    default_value: 
+  stores:
+    plugin: default_value
+    default_value:
+      - 1
+  variations/target_id:
+    -
+      plugin: migration
+      migration: shopify_migrate_product_variation_import
+      source: product_variations
+    -
+      plugin: skip_on_empty
+      method: row
+destination:
+  plugin: 'entity:commerce_product'
+migration_dependencies:
+  required:
+    - shopify_migrate_product_variation_import_csv

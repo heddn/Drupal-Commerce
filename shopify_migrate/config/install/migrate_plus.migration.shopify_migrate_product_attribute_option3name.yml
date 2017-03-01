@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies: {  }
+id: shopify_migrate_product_attribute_option3_name
+migration_tags:
+  - shopify_migrate
+migration_group: shopify_migrate_csv
+label: 'Option3 Name product attribute values.'
+source:
+  plugin: 'ProductAttribute.php id'
+  keys:
+    - Option3 Name
+process:
+  name: Option3 Name
+  attribute:
+    plugin: default_value
+    default_value: option3name
+destination:
+  plugin: 'entity:commerce_product_attribute_value'
+migration_dependencies: {  }
