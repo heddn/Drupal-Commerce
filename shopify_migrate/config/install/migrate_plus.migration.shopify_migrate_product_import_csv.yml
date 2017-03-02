@@ -9,7 +9,7 @@ label: 'Shopify Migrate Product import'
 source:
   plugin: 'Product.php id'
   keys:
-    - 
+    - Handle
 process:
   title: Title
   body: Body (HTML)
