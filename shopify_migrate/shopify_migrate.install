@@ -1,6 +1,6 @@
 <?php
 
-function shopify_migrate_install() {
+function commerce_demo_install() {
   $currency_importer = \Drupal::service('commerce_price.currency_importer');
   $store_storage = \Drupal::service('entity_type.manager')->getStorage('commerce_store');
 
@@ -8,7 +8,7 @@ function shopify_migrate_install() {
   $store_values = [
     'type' => 'online',
     'uid' => 1,
-    'name' => 'Shopify store',
+    'name' => 'Demo store',
     'mail' => 'admin@example.com',
     'address' => [
       'country_code' => 'US',

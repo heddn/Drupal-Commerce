@@ -1,5 +1,5 @@
 langcode: en
 status: true
 dependencies: {  }
-id: Option2 Value
-label: option2 value
+id: option2value
+label: Option2 Value

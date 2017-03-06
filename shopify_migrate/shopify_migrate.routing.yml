@@ -1,0 +1,7 @@
+shopify_migrate.my_page:
+  path: '/mypage/page'
+  defaults:
+    _controller: '\Drupal\shopify_migrate\Controller\ExampleController::myPage'
+    _title: 'Function Dump'
+  requirements:
+    _permission: 'access content'
