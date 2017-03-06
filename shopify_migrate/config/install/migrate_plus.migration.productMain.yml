@@ -7,14 +7,14 @@ migration_tags:
 migration_group: shopify_migrate_csv
 label: 'Shopify Migrate Product import'
 source:
-  plugin: 'product.php id'
+  plugin: shopify_migrate_product_csv
   keys:
-    - 
+    - Handle
 process:
-  title: 
+  title: Title
   type:
     plugin: default_value
-    default_value: 
+    default_value: default
   stores:
     plugin: default_value
     default_value:
@@ -22,14 +22,8 @@ process:
   variations/target_id:
     -
       plugin: migration
-      migration: shopify_migrate_product_variation_import_csv
-      source: product_variations
-    -
-      plugin: skip_on_empty
-      method: row
-  body: Description
+      migration:
+  body: Body (HTML)
 destination:
   plugin: 'entity:commerce_product'
-migration_dependencies:
-  required:
-    - shopify_migrate_product_variation_import_csv
+migration_dependencies: {  }
