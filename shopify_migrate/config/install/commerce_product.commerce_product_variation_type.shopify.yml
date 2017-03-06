@@ -1,7 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: shopify
-label: Shopify
-orderItemType: default
-generateTitle: true
