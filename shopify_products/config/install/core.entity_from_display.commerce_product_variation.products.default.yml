@@ -7,16 +7,16 @@ dependencies:
     - field.field.commerce_product_variation.products.attribute_option1value
     - field.field.commerce_product_variation.products.attribute_option2value
     - field.field.commerce_product_variation.products.attribute_option3value
-    - field.field.commerce_product_variation.products.attribute_imagesrc
-    - field.field.commerce_product_variation.products.attribute_variantbarcode
-    - field.field.commerce_product_variation.products.attribute_variantfulfillmentservice
     - field.field.commerce_product_variation.products.attribute_variantgrams
+    - field.field.commerce_product_variation.products.attribute_variantbarcode
     - field.field.commerce_product_variation.products.attribute_variantimage
-    - field.field.commerce_product_variation.products.attribute_variantinventorypolicy
     - field.field.commerce_product_variation.products.attribute_variantinventoryqty
-    - field.field.commerce_product_variation.products.attribute_variantinventorytracker
-    - field.field.commerce_product_variation.products.attribute_variantrequiresshipping
     - field.field.commerce_product_variation.products.attribute_variantweightunit
+    - field.field.commerce_product_variation.products.attribute_imagesrc
+    - field.field.commerce_product_variation.products.attribute_variantprice
+    - field.field.commerce_product_variation.products.attribute_inventorytracker
+    - field.field.commerce_product_variation.products.attribute_inventorypolicy
+    - field.field.commerce_product_variation.products.attribute_requiresshipping
   module:
     - commerce_price
 _core:
@@ -33,12 +33,62 @@ content:
     third_party_settings: {  }
   attribute_option2value:
     type: options_select
-    weight: 2
+    weight: 1
     settings: {  }
     third_party_settings: {  }
   attribute_option3value:
     type: options_select
-    weight: 3
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  attribute_variantgrams:
+    type: options_select
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  attribute_variantbarcode:
+    type: options_select
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  attribute_variantimage:
+    type: options_select
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  attribute_variantinventoryqty:
+    type: options_select
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  attribute_variantweightunit:
+    type: options_select
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  attribute_imagesrc:
+    type: options_select
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  attribute_variantprice:
+    type: options_select
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  attribute_inventorytracker:
+    type: options_select
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  attribute_inventorypolicy:
+    type: options_select
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  attribute_requiresshipping:
+    type: options_select
+    weight: 1
     settings: {  }
     third_party_settings: {  }
   price:

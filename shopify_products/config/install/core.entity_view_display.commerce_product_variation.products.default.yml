@@ -6,16 +6,16 @@ dependencies:
     - field.field.commerce_product_variation.products.attribute_option1value
     - field.field.commerce_product_variation.products.attribute_option2value
     - field.field.commerce_product_variation.products.attribute_option3value
-    - field.field.commerce_product_variation.products.attribute_imagesrc
-    - field.field.commerce_product_variation.products.attribute_variantbarcode
-    - field.field.commerce_product_variation.products.attribute_variantfulfillmentservice
     - field.field.commerce_product_variation.products.attribute_variantgrams
+    - field.field.commerce_product_variation.products.attribute_variantbarcode
     - field.field.commerce_product_variation.products.attribute_variantimage
-    - field.field.commerce_product_variation.products.attribute_variantinventorypolicy
     - field.field.commerce_product_variation.products.attribute_variantinventoryqty
-    - field.field.commerce_product_variation.products.attribute_variantinventorytracker
-    - field.field.commerce_product_variation.products.attribute_variantrequiresshipping
     - field.field.commerce_product_variation.products.attribute_variantweightunit
+    - field.field.commerce_product_variation.products.attribute_imagesrc
+    - field.field.commerce_product_variation.products.attribute_variantprice
+    - field.field.commerce_product_variation.products.attribute_inventorytracker
+    - field.field.commerce_product_variation.products.attribute_inventorypolicy
+    - field.field.commerce_product_variation.products.attribute_requiresshipping
   module:
     - commerce_price
 id: commerce_product_variation.products.default

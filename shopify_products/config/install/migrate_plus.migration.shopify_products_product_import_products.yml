@@ -1,7 +1,7 @@
 langcode: en
 status: true
 dependencies: {  }
-id: shopify_products_product_import
+id: shopify_products_product_import_products
 migration_tags:
   - shopify_products
 migration_group: shopify_products
