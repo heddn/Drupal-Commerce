@@ -35,14 +35,14 @@ class DemoCsv extends CSVFileObject {
     $row = $this->current();
 
     if ($this->name == '') {
-      $this->name = $row['Name'];
+      $this->name = $row['Handle'];
     }
-    while (($this->name == $row['Name'] || in_array($row['Name'], $this->importedProduct)) && !$this->eof()) {
+    while (($this->name == $row['Handle'] || in_array($row['Handle'], $this->importedProduct)) && !$this->eof()) {
       parent::next();
       $row = $this->current();
     }
-    $this->name = $row['Name'];
-    $this->importedProduct[] = $row['Name'];
+    $this->name = $row['Handle'];
+    $this->importedProduct[] = $row['Handle'];
   }
 
   /**
