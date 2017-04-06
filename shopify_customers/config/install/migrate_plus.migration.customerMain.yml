@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies: {  }
+id: shopify_customers_main
+migration_tags:
+  - shopify_customers
+migration_group: shopify_customers_csv
+label: 'Shopify Migrate Customers import'
+source:
+  plugin: csv
+  keys:
+    - Email
+process:
+  name:
+    plugin: concat
+    source:
+      - First Name
+      - Last Name
+  mail: Email
+  timezone:
+    plugin: default_value
+    default_value: America/Chicago
+  init: Email
+  deafault_langcode:
+    plugin: default_value
+    default_value:
+      - 1
+
+destination:
+  plugin: 'entity:user'
+migration_dependencies: {  }
