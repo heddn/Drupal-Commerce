@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_attribute.option2name
+    - commerce_product.commerce_product_variation_type.shopify
+    - field.storage.commerce_product_variation.attribute_option2name
+id: commerce_product_variation.shopify.attribute_option2name
+field_name: attribute_option2name
+entity_type: commerce_product_variation
+bundle: shopify
+label: Option2 Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:commerce_product_attribute_value'
+  handler_settings:
+    target_bundles:
+      - option2name
+field_type: entity_reference

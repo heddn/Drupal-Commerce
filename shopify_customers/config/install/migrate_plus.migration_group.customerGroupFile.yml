@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies: {  }
+id: shopify_customers_csv
+label: 'Shopify Migrate'
+description: Imports shopify csv files
+source_type: CSV Files
+module: shopify_customers
+shared_configuration:
+  source:
+    path: ./modules/custom/shopify_customers/data/customers_export.csv
+    header_row_count: 1

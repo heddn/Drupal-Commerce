@@ -14,7 +14,9 @@ process:
   title: Title
   type:
     plugin: default_value
-    default_value: default
+    default_value: shopify  
+  body: Body (HTML)
+  vendor: Vendor
   stores:
     plugin: default_value
     default_value:
@@ -22,8 +24,13 @@ process:
   variations/target_id:
     -
       plugin: migration
-      migration:
-  body: Body (HTML)
+      migration: shopify_migrate_product_variation_import
+      source: product_variations
+    -
+      plugin: skip_on_empty
+      method: row
 destination:
   plugin: 'entity:commerce_product'
-migration_dependencies: {  }
+migration_dependencies:
+  required:
+    - shopify_migrate_product_variation_import_csv
