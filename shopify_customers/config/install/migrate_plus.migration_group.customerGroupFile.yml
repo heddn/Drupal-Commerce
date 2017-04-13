@@ -8,5 +8,7 @@ source_type: CSV Files
 module: shopify_customers
 shared_configuration:
   source:
+  # This works, but had codes the location. Better approach is 
+  # https://github.com/MTechLLC/d8_custom_migrate/blob/master/web/modules/custom/custom_migrate/custom_migrate.module#L29
     path: ./modules/custom/shopify_customers/data/customers_export.csv
     header_row_count: 1
