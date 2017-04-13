@@ -1,3 +1,4 @@
+# These new lines are not good on non-Windows machines (^M). Changed your editor to use CRLF, which is the Drupal standard.
 langcode: en
 status: true
 dependencies: {  }
